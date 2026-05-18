@@ -22,6 +22,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
   title: "AFRETEC-UNILAG Inclusive Education Innovation Challenge 2026",
   description:
     "A pan-African competition for undergraduate teams across Anglophone West Africa. Funded by AFRETEC, supported by MathWorks. Submission deadline: May 31, 2026.",
