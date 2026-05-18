@@ -43,7 +43,7 @@ const TEAM: TeamMember[] = [
         name: "Mr. Abdurrahman Balogun",
         role: "ICT Support",
         linkedin: "https://www.linkedin.com/in/abdurrahman-balogun-41b48a32b/",
-        photo: "/images/team/balogun.jpg",
+        photo: "",
     },
 ];
 
