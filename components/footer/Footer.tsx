@@ -288,12 +288,6 @@ export function Footer() {
                             >
                                 Innovation & Technology Management Office, UNILAG
                             </p>
-
-                            <div className="flex items-center gap-2">
-                                <SocialIcon Icon={LinkedInIcon} href="https://www.linkedin.com/" label="LinkedIn" />
-                                <SocialIcon Icon={InstagramIcon} href="https://www.instagram.com/" label="Instagram" />
-                                <SocialIcon Icon={TwitterIcon} href="https://www.twitter.com/" label="Twitter" />
-                            </div>
                         </div>
                     </div>
 
