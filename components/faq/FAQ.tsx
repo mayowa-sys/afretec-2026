@@ -15,7 +15,7 @@ const FAQS: QA[] = [
       "Undergraduate students currently enrolled at a recognized university in Anglophone West Africa — Nigeria, Ghana, Liberia, Sierra Leone, or The Gambia. Teams must be multidisciplinary, which means including members from across Science, Technology, Engineering, Arts, Mathematics, Education, or Design.",
   },
   {
-    question: "Can I apply solo?",
+    question: "Can I apply as an individual?",
     answer:
       "No — this is a team competition. We strongly encourage teams of three to five members from at least two different disciplines, with at least one member from Arts, Humanities, Education, or Design. Building inclusive education solutions is interdisciplinary work; the team should reflect that.",
   },

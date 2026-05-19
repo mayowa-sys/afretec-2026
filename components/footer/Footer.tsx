@@ -198,12 +198,13 @@ export function Footer() {
                                         className="object-contain"
                                     />
                                 </div>
-                                <div className="relative h-12 w-12">
+                                <div className="relative h-16 w-60 flex-shrink-0">
                                     <Image
                                         src="/images/afretec-logo.png"
                                         alt="AFRETEC Network"
                                         fill
-                                        className="object-contain"
+                                        sizes="240px"
+                                        className="object-contain object-left"
                                     />
                                 </div>
                             </div>
@@ -309,31 +310,16 @@ export function Footer() {
                                 Funded by
                             </div>
                             <div className="flex items-center gap-4">
-                                <div className="relative h-10 w-10 flex-shrink-0">
+                                <div className="relative h-12 w-48 flex-shrink-0">
                                     <Image
                                         src="/images/afretec-logo.png"
                                         alt="AFRETEC Network"
                                         fill
-                                        className="object-contain"
+                                        sizes="192px"
+                                        className="object-contain object-left"
                                     />
                                 </div>
-                                <div>
-                                    <div
-                                        className="font-display font-medium text-[16px] leading-tight"
-                                        style={{
-                                            fontVariationSettings: "'opsz' 24, 'SOFT' 40",
-                                            color: "var(--color-ink)",
-                                        }}
-                                    >
-                                        AFRETEC Network
-                                    </div>
-                                    <div
-                                        className="text-[12px]"
-                                        style={{ color: "var(--color-muted)" }}
-                                    >
-                                        By Carnegie Mellon Africa
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
@@ -345,15 +331,14 @@ export function Footer() {
                                 Supported by
                             </div>
                             <div className="flex items-center gap-4">
-                                <div
-                                    className="flex-shrink-0 h-10 px-3 flex items-center rounded-sm font-display font-bold text-[14px]"
-                                    style={{
-                                        backgroundColor: "var(--color-blue)",
-                                        color: "var(--color-bg)",
-                                        fontVariationSettings: "'opsz' 24, 'SOFT' 40",
-                                    }}
-                                >
-                                    MathWorks
+                                <div className="relative h-12 w-10 flex-shrink-0">
+                                    <Image
+                                        src="/images/mathworks-logo.png"
+                                        alt="AFRETEC Network"
+                                        fill
+                                        sizes="5000px"
+                                        className="object-contain object-left"
+                                    />
                                 </div>
                                 <div>
                                     <div

@@ -65,14 +65,14 @@ export function Hero() {
                     animation: "rise 0.9s ease 0.1s forwards",
                 }}
             >
-                Inclusive Education Innovation Challenge{" "}
-                <span
-                    className="italic font-normal"
-                    style={{
-                        color: "var(--color-blue)",
-                        fontVariationSettings: "'opsz' 48, 'SOFT' 100",
-                    }}
-                >
+                AFRETEC-UNILAG Innovation Challenge{" "}
+        <span
+          className="italic font-normal"
+          style={{
+            color: "var(--color-blue)",
+            fontVariationSettings: "'opsz' 48, 'SOFT' 100",
+          }}
+        >
           — Edition III
         </span>
             </h2>
@@ -119,72 +119,71 @@ export function Hero() {
         </span>
             </h1>
 
-            {/* Decorative glyph */}
-            <div
-                className="absolute right-5 md:right-10 top-[110px] md:top-[130px] w-[180px] h-[180px] md:w-[360px] md:h-[360px] pointer-events-none opacity-0"
-                style={{ animation: "rise 1.4s ease 1.6s forwards" }}
-                aria-hidden="true"
-            >
-                <svg
-                    viewBox="0 0 200 200"
-                    style={{ animation: "rotate-slow 60s linear infinite" }}
-                    className="w-full h-full"
-                >
-                    <defs>
-                        <pattern
-                            id="dots"
-                            x="0"
-                            y="0"
-                            width="10"
-                            height="10"
-                            patternUnits="userSpaceOnUse"
-                        >
-                            <circle
-                                cx="2"
-                                cy="2"
-                                r="0.8"
-                                fill="var(--color-ink-soft)"
-                                opacity="0.4"
-                            />
-                        </pattern>
-                        <path
-                            id="circle-top"
-                            d="M 100,100 m -85,0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0"
-                            fill="none"
-                        />
-                    </defs>
-                    <circle
-                        cx="100"
-                        cy="100"
-                        r="95"
-                        fill="none"
-                        stroke="var(--color-line)"
-                        strokeWidth="1"
-                    />
-                    <circle
-                        cx="100"
-                        cy="100"
-                        r="70"
-                        fill="none"
-                        stroke="var(--color-line)"
-                        strokeWidth="1"
-                        strokeDasharray="2 4"
-                    />
-                    <circle cx="100" cy="100" r="45" fill="url(#dots)" />
-                    <text
-                        fill="var(--color-ink-soft)"
-                        fontFamily="var(--font-geist-mono)"
-                        fontSize="8"
-                        letterSpacing="3"
-                    >
-                        <textPath href="#circle-top" startOffset="0">
-                            · AFRETEC · UNILAG · MMXXVI · INCLUSIVE EDUCATION INNOVATION CHALLENGE ·   
-                        </textPath>
-                    </text>
-                </svg>
-            </div>
+                  {/* Challenge flyer — editorial treatment, top right */}
+      <div
+        className="absolute right-5 md:right-10 top-[90px] md:top-[110px] z-20 pointer-events-none hidden sm:block opacity-0"
+        style={{ animation: "flyer-place 1.2s cubic-bezier(.16,1,.3,1) 1.4s forwards" }}
+      >
+        {/* Crop marks — top right corner */}
+        <div className="absolute -top-3 -right-3 w-6 h-6 pointer-events-none">
+          <div
+            className="absolute top-0 right-0 w-3 h-px"
+            style={{ backgroundColor: "var(--color-ink)" }}
+          />
+          <div
+            className="absolute top-0 right-0 w-px h-3"
+            style={{ backgroundColor: "var(--color-ink)" }}
+          />
+        </div>
+        {/* Crop marks — bottom left corner */}
+        <div className="absolute -bottom-3 -left-3 w-6 h-6 pointer-events-none">
+          <div
+            className="absolute bottom-0 left-0 w-3 h-px"
+            style={{ backgroundColor: "var(--color-ink)" }}
+          />
+          <div
+            className="absolute bottom-0 left-0 w-px h-3"
+            style={{ backgroundColor: "var(--color-ink)" }}
+          />
+        </div>
 
-            {/* Bottom row: theme / countdown / meta */}
+        {/* Flyer image with slight tilt */}
+        <div
+          className="relative"
+          style={{ transform: "rotate(-2.5deg)" }}
+        >
+          <div
+            className="relative w-[220px] md:w-[340px] aspect-[4/5] overflow-hidden"
+            style={{
+              boxShadow:
+                "0 1px 0 var(--color-line), 0 20px 40px -10px rgba(10,10,10,0.18), 0 8px 16px -4px rgba(10,10,10,0.1)",
+              backgroundColor: "var(--color-bg)",
+            }}
+          >
+            <Image
+              src="/images/challenge-flyer.jpg"
+              alt="AFRETEC-UNILAG Innovation Challenge 3.0 — Official Call for Student Innovators"
+              fill
+              sizes="(max-width: 768px) 220px, 340px"
+              className="object-cover"
+              priority
+            />
+          </div>
+
+          {/* Editorial caption below flyer */}
+          <div
+            className="absolute -bottom-12 right-0 flex items-center gap-2 font-mono text-[9px] tracking-[0.14em] uppercase"
+            style={{ color: "var(--color-muted)" }}
+          >
+            <span
+              className="inline-block w-4 h-px"
+              style={{ backgroundColor: "var(--color-muted)" }}
+            />
+            <span>Fig. 01 — Official call</span>
+          </div>
+        </div>
+      </div>
+
             <div
                 className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr] gap-8 md:gap-15 mt-12 md:mt-20 items-end opacity-0"
                 style={{ animation: "rise 1s ease 1.6s forwards" }}

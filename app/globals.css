@@ -107,3 +107,19 @@ body::before {
   from { transform: scaleX(0); }
   to { transform: scaleX(1); }
 }
+
+@keyframes flyer-place {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) rotate(-8deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes marker-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.35; }
+  50%      { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}

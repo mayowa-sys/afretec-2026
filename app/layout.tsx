@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
   },
-  title: "AFRETEC-UNILAG Inclusive Education Innovation Challenge 2026",
+  title: "AFRETEC-UNILAG Innovation Challenge 3.0",
   description:
-    "A pan-African competition for undergraduate teams across Anglophone West Africa. Funded by AFRETEC, supported by MathWorks. Submission deadline: May 31, 2026.",
+    "AFRETEC-UNILAG Innovation Challenge 3.0 — Inclusive Education Innovation Challenge. Open to undergraduate teams across Anglophone West Africa. Deadline: May 31, 2026.",
   keywords: [
     "AFRETEC",
     "UNILAG",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Carnegie Mellon Africa",
   ],
   openGraph: {
-    title: "AFRETEC-UNILAG Inclusive Education Innovation Challenge 2026",
+    title: "AFRETEC-UNILAG Innovation Challenge 3.0",
     description:
       "Build the future of education, built by Africa. Multidisciplinary undergraduate teams across Anglophone West Africa.",
     type: "website",
