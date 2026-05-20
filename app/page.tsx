@@ -1,5 +1,6 @@
 import { Nav } from "@/components/nav/Nav";
 import { Hero } from "@/components/hero/Hero";
+import { CallBand } from "@/components/callband/CallBand";
 import { Timeline } from "@/components/timeline/Timeline";
 import { Eligibility } from "@/components/eligibility/Eligibility";
 import { Prizes } from "@/components/prizes/Prizes";
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <CallBand />
       <Timeline />
       <Eligibility />
       <Prizes />

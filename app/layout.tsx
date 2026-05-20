@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Geist, Geist_Mono, Darker_Grotesque, Raleway } from "next/font/google";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -21,11 +21,22 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
+const darkerGrotesque = Darker_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-darker-grotesque",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  weight: ["300", "500"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  icons: {
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-  },
+  icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
   title: "AFRETEC-UNILAG Innovation Challenge 3.0",
   description:
     "AFRETEC-UNILAG Innovation Challenge 3.0 — Inclusive Education Innovation Challenge. Open to undergraduate teams across Anglophone West Africa. Deadline: May 31, 2026.",
@@ -41,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AFRETEC-UNILAG Innovation Challenge 3.0",
     description:
-      "Build the future of education, built by Africa. Multidisciplinary undergraduate teams across Anglophone West Africa.",
+      "Inclusive Education Innovation Challenge. Multidisciplinary undergraduate teams across Anglophone West Africa.",
     type: "website",
   },
 };
@@ -52,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable}`}
+      className={`${fraunces.variable} ${geist.variable} ${geistMono.variable} ${darkerGrotesque.variable} ${raleway.variable}`}
     >
       <body>{children}</body>
     </html>
