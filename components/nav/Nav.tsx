@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 
 const LINKS = [
-    { href: "#overview", label: "Overview" },
     { href: "#timeline", label: "How It Works" },
+    { href: "#events", label: "Events" },
     { href: "#eligibility", label: "Eligibility" },
     { href: "#prizes", label: "Prizes" },
     { href: "#past", label: "Past Editions" },
@@ -45,12 +45,12 @@ export function Nav() {
                 <div className="relative flex items-center justify-end h-10">
 
                     {/* Centered nav links — absolutely positioned so they're truly centered */}
-                    <ul className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-7 list-none">
+                    <ul className="hidden xl:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-6 list-none">
                         {LINKS.map((link) => (
                             <li key={link.href}>
                                 <a
                                     href={link.href}
-                                    className="relative text-[12.5px] font-semibold uppercase transition-colors group py-1"
+                                    className="relative text-[12px] font-semibold uppercase transition-colors group py-1"
                                     style={{
                                         letterSpacing: "0.08em",
                                         color: "rgba(255, 255, 255, 0.78)",
@@ -76,7 +76,7 @@ export function Nav() {
                             href="https://bit.ly/UNILAGAFRETECInnovationChallenge3"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold transition-all"
+                            className="group hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[13px] font-semibold transition-all"
                             style={{
                                 backgroundColor: "var(--color-blue)",
                                 color: "#fff",
@@ -103,7 +103,7 @@ export function Nav() {
                             type="button"
                             onClick={() => setMenuOpen((v) => !v)}
                             aria-label={menuOpen ? "Close menu" : "Open menu"}
-                            className="lg:hidden w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
+                            className="xl:hidden w-10 h-10 rounded-full flex items-center justify-center text-white transition-colors"
                             style={{
                                 background: "rgba(255,255,255,0.08)",
                                 border: "1px solid rgba(255,255,255,0.15)",
